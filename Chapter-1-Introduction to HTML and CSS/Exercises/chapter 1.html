@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac and Cheese Recipe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: blanchedalmond;
+            padding: 20px;
+            display: flex;
+    justify-content: center;
+    align-items: center;
+
+        }
+        .container {        
+            max-width: 600px;
+            background: beige;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+        ol {
+            padding-left: 20px;
+        }
+        .nutrition {
+            margin-top: 20px;
+            padding: 15px;
+            background: #fff3cd;
+            border-left: 5px solid #ffa502;
+        }
+        .rating {
+            margin-top: 20px;
+        }
+        .stars {
+            font-size: 24px;
+            cursor: pointer;
+        }
+        .feedback {
+            margin-top: 10px;
+        }
+        .feedback textarea {
+            width: 100%;
+            height: 80px;
+            padding: 5px;
+        }
+    </style>
+    <script>
+        function rate(star) {
+            let stars = document.querySelectorAll('.star');
+            stars.forEach((s, index) => {
+                if (index < star) {
+                    s.textContent = '★';
+                } else {
+                    s.textContent = '☆';
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>MAC & CHEESE RECIPE</h2>
+        <img src="https://artzyfoodie.com/wp-content/uploads/2020/07/Extra-Creamy-Stove-Top-Mac-and-Cheese-1.jpg"width=600>
+        <h2>Mac & Cheese Ingredients</h2>
+        <ul>
+            <li>1 pound short pasta (elbows, cavatappi, or shellbows)</li>
+            <li>3 tablespoons butter</li>
+            <li>3 tablespoons all-purpose flour</li>
+            <li>2 (12-ounce) cans evaporated milk</li>
+            <li>4 ounces whipped cream cheese, room temperature</li>
+            <li>2 teaspoons seasoned salt or Creole seasoning</li>
+            <li>1 teaspoon granulated garlic or garlic powder</li>
+            <li>1/2 teaspoon paprika</li>
+            <li>1/4 teaspoon cayenne pepper</li>
+            <li>1/4 teaspoon ground turmeric (optional, for color)</li>
+            <li>1 tablespoon Dijon or spicy brown mustard</li>
+            <li>1 pound sharp cheddar cheese, shredded, divided</li>
+            <li>8 ounces Monterey Jack cheese, shredded, divided</li>
+            <li>8 ounces low-moisture whole milk mozzarella, shredded, divided</li>
+        </ul>
+        
+        <h2>Method</h2>
+        <ol>
+            <li>Preheat the oven to 350ºF.</li>
+            <li>Grease a 9x13-inch baking dish with butter or oil.</li>
+            <li><strong>Boil the pasta:</strong> Bring a large pot of salted water to a boil and boil the pasta according to the package instructions until al dente. Drain the pasta in a colander, transfer it to a large mixing bowl, and set aside.</li>
+            <li><strong>Make the sauce:</strong> Meanwhile, melt the butter in a medium (3 to 4-quart) heavy-bottomed saucepan over medium heat. Add the flour and cook for about 1 minute, whisking continuously, until the roux is bubbly and no longer smells like raw flour—you should just smell a buttery aroma.</li>
+            <li>Continuing to whisk continuously, slowly pour in the evaporated milk. Once all of the milk has been added, let the mixture come up to a simmer, whisking often to avoid any scorching on the bottom of the pot.</li>
+            <img src="https://www.simplyrecipes.com/thmb/aWrZkWlIzdMZTOCzvsX_TaxdsC8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/simply-recipes-baked-macaroni-and-cheese-method-1-35e4f8b1bd2f47578ae4a25e2a181c4b.jpg"width=400>
+            <li>When the sauce just begins to simmer and thicken, reduce the heat to low. Add the cream cheese, seasoned salt, garlic powder, paprika, cayenne pepper, turmeric (if using), and mustard and whisk until smooth.</li>
+           <img src="https://www.simplyrecipes.com/thmb/LGidyQ4POmwzrU4Z8x0LLHhiKV8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/simply-recipes-baked-macaroni-and-cheese-method-2-64213e1f916b4eb9b24999d4c1222e60.jpg"width=400>
+            <li><strong>Add the cheese:</strong> Add half of the cheddar, half of the Monterey Jack, and half of the mozzarella cheese to the sauce in large handfuls, whisking in each handful until completely melted before adding the next. When the last handful of cheese has just melted, immediately remove the saucepan from the heat. Taste, adding salt if needed.</li>
+           <img src="https://www.simplyrecipes.com/thmb/EqTRRG5S1DkjO9C14PlbZfkwp9A=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/simply-recipes-baked-macaroni-and-cheese-method-5-cf40669ef14a48efba466cb76929bd66.jpg"width=400>
+            <li><strong>Assemble the mac and cheese:</strong> Add the cheese sauce to the bowl of pasta and mix until evenly combined. Transfer half of the mac and cheese to the baking dish, spread it out in an even layer, then sprinkle half of the remaining cheeses on top. Add the rest of the cheesy pasta to the baking dish and top with the rest of the cheese.</li>
+           <img src="https://www.simplyrecipes.com/thmb/b_Njh3UtGtkmxWxhX5MWlDd4P9Q=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/simply-recipes-baked-macaroni-and-cheese-method-8-0558abcba7134ecd881bb8b4a683c451.jpg"width=400>
+            <li><strong>Bake and serve:</strong> Bake the mac and cheese until it is bubbly around the edges and the top is lightly golden, 20 to 25 minutes.</li>
+           <img src="https://www.simplyrecipes.com/thmb/gbXXQDdO00mZjnhC37YdJc9Hfn8=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/simply-recipes-baked-macaroni-and-cheese-method-10-a19382376b1a481e8d7e3807732d00a9.jpg"width=400>
+            <li>Remove the mac and cheese from the oven. Let it rest for about 10 minutes to set up a bit, then scoop servings into serving bowls or onto plates. Serve right away.</li>
+        
+        </ol>
+        
+        <h2>Nutrition Facts</h2>
+        <div class="nutrition">
+            <p><strong>Per Serving:</strong></p>
+            <p><strong>Calories:</strong> 492</p>
+            <p><strong>Fat:</strong> 34g</p>
+            <p><strong>Carbs:</strong> 22g</p>
+            <p><strong>Protein:</strong> 25g</p>
+        </div>
+
+        <h2>Rate this Recipe</h2>
+        <div class="rating">
+            <span class="stars">
+                <span class="star" onclick="rate(1)">☆</span>
+                <span class="star" onclick="rate(2)">☆</span>
+                <span class="star" onclick="rate(3)">☆</span>
+                <span class="star" onclick="rate(4)">☆</span>
+                <span class="star" onclick="rate(5)">☆</span>
+            </span>
+        </div>
+        
+        <h2>Leave a Feedback</h2>
+        <div class="feedback">
+            <textarea placeholder="Write your feedback here..."></textarea>
+            <button onclick="alert('Feedback submitted!')">Submit</button>
+        </div>
+    </div>
+</body>
+</html>
