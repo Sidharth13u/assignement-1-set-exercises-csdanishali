@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>One Flew Over the Cuckoo's Nest</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://www.transparenttextures.com/patterns/asfalt-light.png'); /* Graphical Grey Background */
+            color: black;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #c62828;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .movie-title {
+            font-size: 48px;
+            color: black;
+            text-shadow: 3px 3px 5px gray;
+            font-weight: bold;
+        }
+
+        /* Section Styling */
+        h1, h2 {
+            color: #c62828;
+        }
+
+        .section-header {
+            cursor: pointer;
+            background-color: #c62828;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .section-content {
+            display: none;
+            padding: 20px;
+            border-bottom: 1px solid #444;
+        }
+
+        /* Button Styling */
+        .btn {
+            display: inline-block;
+            background-color: #c62828;
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: #9b0000;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#cast">Cast</a></li>
+            <li><a href="#characters">Characters</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1 class="movie-title">One Flew Over the Cuckoo's Nest</h1>
+    </header>
+
+    <section id="overview">
+        <div class="section-header" onclick="toggleSection('overview-content')">Overview</div>
+        <div id="overview-content" class="section-content">
+            <p><strong>One Flew Over the Cuckoo's Nest</strong> (1975) is a psychological drama directed by Miloš Forman and based on Ken Kesey's novel. It follows Randle McMurphy, a rebellious criminal who fakes insanity to avoid prison and is sent to a mental institution, where he challenges the oppressive Nurse Ratched.</p>
+        </div>
+    </section>
+
+    <section id="cast">
+        <div class="section-header" onclick="toggleSection('cast-content')">Cast & Creative Team</div>
+        <div id="cast-content" class="section-content">
+            <ul>
+                <li>Jack Nicholson as Randle McMurphy</li>
+                <li>Louise Fletcher as Nurse Ratched</li>
+                <li>William Redfield as Harding</li>
+                <li>Brad Dourif as Billy Bibbit</li>
+                <li>Directed by: Miloš Forman</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="characters">
+        <div class="section-header" onclick="toggleSection('characters-content')">Main Characters</div>
+        <div id="characters-content" class="section-content">
+            <p><strong>Randle McMurphy:</strong> A rebellious man who challenges the hospital’s strict rules.</p>
+            <p><strong>Nurse Ratched:</strong> A cold and authoritarian head nurse who controls the ward.</p>
+            <p><strong>Chief Bromden:</strong> A silent patient who plays a crucial role in the story.</p>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <div class="section-header" onclick="toggleSection('reviews-content')">Reviews</div>
+        <div id="reviews-content" class="section-content">
+            <p>"A powerful and unforgettable film with an outstanding performance by Jack Nicholson." - Roger Ebert</p>
+            <p>"One of the greatest films ever made, capturing the struggle between individuality and authority." - The New York Times</p>
+        </div>
+    </section>
+
+    <!-- Extra spacing between Characters and Reviews -->
+<div style="height: 50px;"></div> <!-- Adds 30px space -->
+
+    <a href="https://www.max.com/movies/one-flew-over-the-cuckoos-nest" target="_blank" class="btn">Watch on HBO Max</a>
+
+
+   <script>
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section.style.display === "none" || section.style.display === "") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+    </script>
+
+</body>
+</html>
