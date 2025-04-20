@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    height: 100vh;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  header {
+    background-color: #1e0033;  
+    padding: 10px 0;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  
+  header h1 {
+    color: white;
+    margin: 0;
+    font-size: 3.0em;
+    border-bottom: 4px solid #fff;
+    display: inline-block;
+    padding-bottom: 0px;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.7em;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 30px;
+    flex-grow: 1;
+    gap: 20px;
+    overflow: hidden;
+  }
+  
+  .welcome {
+    flex: 2;
+    min-width: 300px;
+    max-width: 60%;
+  }
+  
+  .welcome h2 {
+    font-weight: bolder;
+    font-size: 1.8em;
+    margin-bottom: -2%;
+  }
+  
+  .welcome p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    line-break: auto;
+    white-space: pre-line;
+    margin-bottom: -2%;
+  }
+  
+  .welcome img {
+    width: 94;
+    margin-top: 20px;
+    border-radius: 0px;
+  }
+  
+  .lineup {
+    background-color: #16336d;
+    color: white;
+    padding: 24px;
+    border-radius: 0px;
+    max-width: 100%;
+    min-width: 500px;
+    margin-left: auto;
+  }
+  
+  .lineup h2 {
+    font-size: 1.6em;
+  }
+  
+  .lineup ul {
+    padding-left: 0px;
+    margin-bottom: 70px;
+    list-style: none;
+  }
+
+  .lineup ul li::before {
+    content: "-"; /* em dash style */
+    color: white;
+    margin-right: 5px;
+  }
+  
+  .lineup li {
+    margin-bottom: 20px; /* or 15px for more spacing */
+  }
+  
+  .lineup-images {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .lineup-images img {
+    width: 48%;
+    height: auto;
+    border-radius: 0px;
+  }     
+  
+  footer {
+    background-color: #470b80;
+    color: white;
+    text-align: center;
+    padding: 1px 0;
+    flex-shrink: 5;
+    font-size: 1em;
+    margin-bottom: 0px }
